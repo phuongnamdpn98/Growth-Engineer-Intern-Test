@@ -1,0 +1,44 @@
+@import './variables';
+
+.container_share_result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+
+    .share_result {
+        width: 400px;
+        color: #000000;
+        background-color: $font-color;
+        border: none;
+        border-radius: 10px;
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            button {
+                margin: 5px;
+                padding: 10px 10px;
+                background-color: #e9f4ff;
+                border: none;
+                border-radius: 5px;
+                color: $button-color;
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover {
+                    color: $font-color;
+                    background-color: $button-color;
+                }
+            }
+
+            .close {
+                background-color: $font-color;
+            }
+        }
+    }
+}

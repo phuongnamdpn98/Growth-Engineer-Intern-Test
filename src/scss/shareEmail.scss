@@ -1,0 +1,66 @@
+@import './variables';
+
+.container_share_email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+
+    .share_email {
+        width: 400px;
+        color: #000000;
+        background-color: $font-color;
+        border: none;
+        border-radius: 10px;
+        .title{
+            font-size: 16px;
+            text-align: left;
+            margin-left: 24px;
+        }
+        .des{
+            font-size: 12px;
+            text-align: left;
+            margin-left: 24px;
+            color: rgb(105, 105, 105);
+        }
+        .input_email{
+            width: 100%;
+            input{
+                width: 100%;
+                max-width: 80%;
+                padding: 8px 10px;
+                border:  1px solid rgb(201, 201, 201);
+
+                &::placeholder{
+                    color: rgb(201, 201, 201);;
+                }
+            }
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+
+            button {
+                margin: 5px 30px;
+                padding: 10px 30px;
+                background-color: #e9f4ff;
+                border: none;
+                border-radius: 5px;
+                color: $button-color;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover {
+                    color: $font-color;
+                    background-color: $button-color;
+                }
+            }
+
+            .close {
+                background-color: $font-color;
+            }
+        }
+    }
+}
