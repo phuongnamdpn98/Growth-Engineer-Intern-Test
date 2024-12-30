@@ -13,13 +13,13 @@ function ShareResult() {
 
 
     const metaType = document.createElement('meta');
-    metaImage.setAttribute('property', 'og:type');
-    metaImage.setAttribute('content', 'website');
+    metaType.setAttribute('property', 'og:type');
+    metaType.setAttribute('content', 'website');
     document.head.appendChild(metaType);
 
     const metaURL = document.createElement('meta');
-    metaImage.setAttribute('property', 'og:url');
-    metaImage.setAttribute('content', page);
+    metaURL.setAttribute('property', 'og:url');
+    metaURL.setAttribute('content', page);
     document.head.appendChild(metaURL);
     
     const metaImage = document.createElement('meta');
