@@ -38,9 +38,9 @@ function ShareResult() {
           <button>
             <FacebookShareButton 
               url={page}
-              hashtag='#Chia sẻ trải nghiệm'
+              hashtag={page}
               content='Chia sẻ trải nghiệm'
-              
+
             >
               Chia sẻ qua Facebook
             </FacebookShareButton>
