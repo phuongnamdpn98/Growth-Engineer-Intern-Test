@@ -13,7 +13,7 @@ import './scss/main.scss';
 function App() {
  
   return (
-    <Router>
+    <Router basename="/Growth-Engineer-Intern-Test">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/instruction" element={<Instruction/>} />
