@@ -10,6 +10,17 @@ function ShareResult() {
   const imageUrl = `${window.location.origin}/images/${img}.jpg`;
   const page = `${window.location.href}`;
   useEffect(() => {
+
+
+    const metaType = document.createElement('meta');
+    metaImage.setAttribute('property', 'og:type');
+    metaImage.setAttribute('content', 'website');
+    document.head.appendChild(metaType);
+
+    const metaURL = document.createElement('meta');
+    metaImage.setAttribute('property', 'og:url');
+    metaImage.setAttribute('content', page);
+    document.head.appendChild(metaURL);
     
     const metaImage = document.createElement('meta');
     metaImage.setAttribute('property', 'og:image');
@@ -39,6 +50,7 @@ function ShareResult() {
             <FacebookShareButton 
               url={page}
               hashtag={imageUrl}
+              
             >
               Chia sẻ qua Facebook
             </FacebookShareButton>
