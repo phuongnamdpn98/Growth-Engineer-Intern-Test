@@ -8,7 +8,7 @@ function ShareResult() {
   const { img } = location.state || {};
   const navigate = useNavigate();
   const imageUrl = `${window.location.origin}/images/${img}.jpg`;
-  const page = window.location.origin;
+  const page = `${window.location.origin}/Growth-Engineer-Intern-Test/share`;
   useEffect(() => {
     
     const metaImage = document.createElement('meta');
@@ -38,6 +38,7 @@ function ShareResult() {
           <button>
             <FacebookShareButton 
             url={page}
+            quote={`Chia sẻ trải nghiệm`}
             >
               Chia sẻ qua Facebook
             </FacebookShareButton>
